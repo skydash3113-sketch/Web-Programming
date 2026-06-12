@@ -1,4 +1,4 @@
-# Aplikasi Blog - Bahrul Ulum Azhari - 240605110064
+# Aplikasi Blog - Firman Fadilah Noor - 240605110083
 
 ## Deskripsi
 
