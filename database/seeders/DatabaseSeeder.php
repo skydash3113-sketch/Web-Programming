@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\KategoriArtikel;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,11 +17,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::updateOrCreate(
+            ['user_name' => 'admin'],
+            [
+                'nama_depan' => 'Firman',
+                'nama_belakang' => 'Fadilah Noor',
+                'password' => Hash::make('password'),
+                'foto' => 'firman-profile.jpg',
+            ]
+        );
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        KategoriArtikel::firstOrCreate(
+            ['nama_kategori' => 'Umum'],
+            ['keterangan' => 'Kategori umum untuk artikel blog.']
+        );
     }
 }
