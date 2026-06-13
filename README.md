@@ -8,12 +8,12 @@ Sistem Manajemen Blog (CMS) berbasis Laravel yang memiliki fitur pengelolaan art
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/BahrulAzhari/aplikasi-blog-240605110064.git
+   git clone https://github.com/Firman Fadilah Noor/aplikasi-blog-240605110083.git
    ```
 
 2. Masuk ke folder proyek:
    ```bash
-   cd aplikasi-blog-240605110064
+   cd aplikasi-blog-240605110083
    ```
 
 3. Install dependency PHP:
